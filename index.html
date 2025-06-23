@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Remi Sederhana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Game Remi Sederhana</h1>
+  <div id="info"></div>
+  <div class="board">
+    <div>
+      <h2>Deck</h2>
+      <button onclick="drawFromDeck()">Ambil Kartu</button>
+    </div>
+    <div>
+      <h2>Pembuangan</h2>
+      <div id="discard-pile"></div>
+      <button onclick="drawFromDiscard()">Ambil dari Buangan</button>
+    </div>
+  </div>
+
+  <div id="hand-container">
+    <h2>Kartu Kamu</h2>
+    <div id="player-hand"></div>
+  </div>
+
+  <div>
+    <button onclick="discardCard()">Buang Kartu</button>
+    <button onclick="closeCard()">Closed Card</button>
+  </div>
+
+  <div id="scoreboard">
+    <h3>Skor: <span id="score">0</span></h3>
+    <h3>Sesi: <span id="session">1</span></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
