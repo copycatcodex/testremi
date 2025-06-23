@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+.board {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+#player-hand span {
+  padding: 10px;
+  border: 1px solid #000;
+  margin: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+#discard-pile {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: yellow;
+}
